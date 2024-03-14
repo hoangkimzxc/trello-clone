@@ -16,6 +16,7 @@ function Column({ id, todos, index }: Props) {
           {...provided.dragHandleProps}
           ref={provided.innerRef}
         >
+          dadsda
           {/* render droppable todos in the column */}
           <Droppable droppableId={index.toString()} type="card">
             {(provided, snapshot) => (
