@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { MagnifyingGlassIcon, UserCircleIcon } from "@heroicons/react/24/solid";
-import Avatar from "react-avatar";
+import * as Avatar from "@radix-ui/react-avatar";
 
 function Header() {
   return (
@@ -34,7 +34,9 @@ function Header() {
             </button>
           </form>
           {/* Avatar */}
-          <Avatar name="Sonny Sangha" round size="50" color="#0055D1" />
+          <Avatar.Root>
+            <Avatar.Fallback>SS</Avatar.Fallback>
+          </Avatar.Root>
         </div>
       </div>
       <div className="flex items-center justify-center px-5 py-2 md:py-5">
